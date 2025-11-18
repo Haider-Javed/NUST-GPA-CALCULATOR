@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NUST GPA Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>NUST GPA Calculator</h1>
+    <table id="subjectsTable">
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Credit Hours</th>
+          <th>Grade</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" placeholder="e.g. Calculus" /></td>
+          <td><input type="number" min="1" value="3" /></td>
+          <td>
+            <select>
+              <option value="4">A</option>
+              <option value="3.5">B+</option>
+              <option value="3">B</option>
+              <option value="2.5">C+</option>
+              <option value="2">C</option>
+              <option value="1.5">D+</option>
+              <option value="1">D</option>
+              <option value="0">F</option>
+            </select>
+          </td>
+          <td><button class="deleteBtn">❌</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id="addRowBtn">+ Add Subject</button>
+    <button id="calculateBtn">Calculate GPA</button>
+
+    <h2 id="result"></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
